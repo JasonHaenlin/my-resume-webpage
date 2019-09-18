@@ -1,0 +1,30 @@
+.bottom-border {
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    line-height: 40px;
+    padding-top: 1em;
+}
+
+.name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    line-height: 1.1em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
