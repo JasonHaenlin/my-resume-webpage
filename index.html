@@ -9,25 +9,26 @@
 </head>
 
 <body>
-
-    <header class="">
-        <div class="header__title">
+    <header>
+        <div class="header__title spacing-left">
             <div class="bottom-border">RESUME</div>
         </div>
-        <div class="header__profile">
-            <div>
+        <div class="header__profile spacing-left flex-container">
+            <div class="flex-container--col4">
                 <div class="header__profile__title">JASON HAENLIN</div>
                 <div class="header__profile__subtitle">Etudiant Ingénieur Informatique</div>
             </div>
-            <div class="header__profile__image"></div>
+            <div class="flex-container--col1">
+                <div class="profile-image profile-image--clip-circle"></div>
+            </div>
         </div>
-        <div class="header__description">Etudiant en première année du cycle d'Ingénieur
-            spécialité Informatique. </div>
+        <div class="header__description text spacing-left">Etudiant en première année du cycle
+            d'Ingénieur
+            spécialité Informatique.</div>
     </header>
 
     <main>
-
-        <section name="left-side">
+        <section name="left-side" class="spacing-left">
             <div class="container">
                 <div class="title">CONTACT</div>
                 <div class="item item--bottom-line">
@@ -126,7 +127,7 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">Angular</span>
+                    <span class="item__title item__title--justify">Angular (TS)</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress90)">
@@ -139,6 +140,15 @@
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress80)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="item__title item__title--justify">Flutter</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress40)">
                                 <rect class="fill" width="100%" height="100%" rx="2" />
                             </g>
                         </svg>
@@ -189,33 +199,33 @@
             <div class="container">
                 <div class="title">HOBBIES</div>
                 <div class="flex-container">
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/coding.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/coding.png"
                             alt="coding-icon">
                         <div class="text-center name">Coding</div>
                     </div>
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/cooking.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/cooking.png"
                             alt="cooking-icon">
                         <div class="text-center name">Cooking</div>
                     </div>
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/gaming.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/gaming.png"
                             alt="gaming-icon">
                         <div class="text-center name">Gaming</div>
                     </div>
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/music.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/music.png"
                             alt="music-icon">
                         <div class="text-center name">Music</div>
                     </div>
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/traveling.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/traveling.png"
                             alt="traveling-icon">
                         <div class="text-center name">Traveling</div>
                     </div>
-                    <div class="icon-container">
-                        <img class="icon-container__img" src="./resources/walking.png"
+                    <div class="icon-container margin-around">
+                        <img class="icon--medium" src="./resources/walking.png"
                             alt="walking-icon">
                         <div class="text-center name">Walking</div>
                     </div>
@@ -230,13 +240,13 @@
             <br>
         </section>
 
-        <section name="right-side">
+        <section name="right-side" class="spacing-left">
             <div class="container">
                 <div class="title">FORMATIONS</div>
                 <div class="item item--left-line">
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Université de Polytech
                                 Nice-Sophia</span>
                             <span class="card__period item__title">En Cours</span>
@@ -245,9 +255,9 @@
                                 spécialisation Science Informatique</span>
                         </div>
                     </div>
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Institut Universitaire de
                                 Nice</span>
                             <span class="card__period item__title">2017</span>
@@ -257,10 +267,11 @@
                                 Industrielle</span>
                         </div>
                     </div>
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
-                            <span class="card__title item__title">Lycée Léons Chiris à Grasse</span>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">Lycée Léons Chiris à
+                                Grasse</span>
                             <span class="card__period item__title">2014</span>
                             <span class="card__description item__detail">Obtention du BAC
                                 professionnel
@@ -278,7 +289,7 @@
                             <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
                                 stroke-dasharray="0" />
                         </svg>
-                        <div class="item__achievement--mid text-center name">Enthousiasme</div>
+                        <div class="item__achievement__title text-center name">Enthousiasme</div>
                     </div>
                     <div class="item__achievement">
                         <svg>
@@ -286,7 +297,8 @@
                             <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
                                 stroke-dasharray="360% 52%" />
                         </svg>
-                        <div class="item__achievement--mid text-center name">Travail d'équipe</div>
+                        <div class="item__achievement__title text-center name">Travail d'équipe
+                        </div>
                     </div>
                     <div class="item__achievement">
                         <svg>
@@ -294,7 +306,7 @@
                             <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
                                 stroke-dasharray="360% 75%" />
                         </svg>
-                        <div class="item__achievement--mid text-center name">Autonome</div>
+                        <div class="item__achievement__title text-center name">Autonome</div>
                     </div>
                     <div class="item__achievement">
                         <svg>
@@ -302,16 +314,16 @@
                             <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
                                 stroke-dasharray="360% 75%" />
                         </svg>
-                        <div class="item__achievement--mid text-center name">Rigoureux</div>
+                        <div class="item__achievement__title text-center name">Rigoureux</div>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="title">STAGES PROFESSIONNELS</div>
                 <div class="item item--left-line">
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Fantastic Sourcing</span>
                             <span class="card__period item__title">Juin, Juillet 2018</span>
                             <span class="card__description item__detail">
@@ -320,20 +332,21 @@
                             </span>
                         </div>
                     </div>
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Fantastic Sourcing</span>
                             <span class="card__period item__title">Avril, Juillet 2017</span>
                             <span class="card__description item__detail">
-                                Stage R&D en informatique et électronique. Elaboration de prototype
+                                Stage R&D en informatique et électronique. Elaboration de
+                                prototype
                                 de capteurs avec l'utilisation de µContrôleur Arduino.
                             </span>
                         </div>
                     </div>
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Azur Domotique</span>
                             <span class="card__period item__title">Mars, Avril 2014</span>
                             <span class="card__description item__detail">
@@ -341,11 +354,12 @@
                             </span>
                         </div>
                     </div>
-                    <div class="item item--bottom-line">
-                        <div class="timeline__circle"></div>
-                        <div class="card">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
                             <span class="card__title item__title">Ets Perez</span>
-                            <span class="card__period item__title">Novembre, Décembre 2012</span>
+                            <span class="card__period item__title">Novembre, Décembre
+                                2012</span>
                             <span class="card__description item__detail">
                                 Formation en antenniste et technicien en électroménager.
                             </span>
@@ -355,6 +369,33 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-link flex-container flex-center padding-around">
+            <div class="padding-around">
+                <img class="icon--small background-circle"
+                    src="./resources/GitHub-Mark-Light-120px-plus.png"
+                    alt="Github logo">
+                <div class="text-center name margin-around">/JasonHaenlin</div>
+            </div>
+            <div class="padding-around">
+                <img class="icon--small background-circle"
+                    src="./resources/LI-In-Bug.png"
+                    alt="Linkedin logo">
+                <div class="text-center name margin-around">/in/jason-haenlin</div>
+            </div>
+            <div class="padding-around">
+                <img class="icon--small background-circle"
+                    src="./resources/icon.png"
+                    alt="Linkedin logo">
+                <div class="text-center name margin-around">portfolio.otakedev.com</div>
+            </div>
+        </div>
+        <div class=" text-center text footer-information padding-around">
+            <span>Tel : +33 6 20 85 25 02</span>
+            <br>
+            <span>@mail : jason.haenlin@gmail.com</span>
+        </div>
+    </footer>
 </body>
 
 </html>

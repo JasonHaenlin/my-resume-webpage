@@ -14,17 +14,18 @@
 
 body {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 
 html {
     font: 400 20px/32px 'Roboto', "Helvetica Neue", sans-serif;
+    height: 100%;
 }
 
 header {
     color: white;
-    position: absolute;
+    position: relative;
     z-index: 10;
     width: 100%;
 }
@@ -32,20 +33,21 @@ header {
 main {
     display: flex;
     background-color: var(--clear);
-    position: relative;
     z-index: 8;
-    top: 15em;
+}
+
+footer {
+    color: white;
+    width: 100%;
 }
 
 main>section:nth-child(1) {
     width: 40%;
     box-shadow: 3px -6px 13px var(--grayB);
-    padding-left: 13vh;
 }
 
 main>section:nth-child(2) {
-    width: 50%;
-    padding-left: 10vh;
+    width: 55%;
 }
 
 svg {
@@ -53,9 +55,21 @@ svg {
     width: 100%;
 }
 
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 
 .background {
     fill: lightgrey;
+}
+
+.background-circle {
+    padding: 0.3em;
+    border-radius: 50%;
+    background-color: var(--clear);
 }
 
 .fill {
@@ -81,18 +95,13 @@ circle {
 .header__title {
     font-size: 13px;
     background-color: var(--blue1);
-    padding: 2em 1em 0em 5rem;
+    padding-top: 2em;
 }
 
 .header__profile {
     background-color: var(--blue2);
-    padding-left: 5rem;
-    padding-top: 3em;
+    align-items: center;
     height: 10em;
-}
-
-.header__profile>div:nth-child(1) {
-    float: left;
 }
 
 .header__profile__title {
@@ -104,40 +113,36 @@ circle {
     font-weight: 200;
 }
 
-.header__profile__image {
+.profile-image {
     background-image: url('./resources/profile.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 6em;
     width: 6em;
+}
+
+.profile-image--clip-circle {
     clip-path: circle(50.00% at center center);
-    float: right;
-    margin-right: 4em;
-    position: relative;
-    bottom: 1em;
 }
 
 .header__description {
     background-color: var(--blue3);
-    padding-left: 5rem;
+    padding-top: 0.5em;
     font-size: 17px;
-    height: 3em;
+    padding-bottom: 0.5em;
 }
 
 .container {
     width: 95%;
 }
 
-
-.icon {
-    width: 5em;
-    height: auto;
+.icon--small {
+    width: 4em;
 }
 
-.icon-container__img {
+.icon--medium {
     width: 6em;
-    padding: 1.5em 0.5em 0 0.5em;
 }
 
 .item {
@@ -181,7 +186,7 @@ circle {
     bottom: -0.5em;
 }
 
-.timeline__circle {
+.timeline-circle {
     position: relative;
     right: 1em;
     height: 2em;
@@ -219,7 +224,33 @@ circle {
     margin: 0.5em;
 }
 
-.item__achievement--mid {
+.item__achievement__title {
     position: relative;
     bottom: 5em;
+}
+
+.footer-link {
+    background-color: var(--blue2);
+}
+
+.footer-information {
+    background-color: var(--blue1);
+}
+
+
+@media (max-width: 1100px) {
+    main {
+        display: block;
+    }
+
+    main>section:nth-child(1) {
+        width: 80%;
+        padding-left: 4vw;
+        box-shadow: none;
+    }
+
+    main>section:nth-child(2) {
+        width: 80%;
+        padding-left: 4vw;
+    }
 }
