@@ -22,14 +22,13 @@ pipeline {
         // sudo chown -vR :site1 /var/www/site1/
         // sudo chmod -vR g+w /var/www/site1/
         // sudo adduser www-data site1
-        stage('Server Deployment') {
-          steps {
-            echo 'Deployement'
-            sh '''
-            sg otake -c 'rm -rf /var/www/html/jasonHaenlin/*'
-            sg otake -c 'mv * /var/www/html/jasonHaenlin/'
-            '''
-          }
+      stage('Server Deployment') {
+        steps {
+          echo 'Deployement'
+          sh '''
+          sg otake -c 'rm -rf /var/www/html/jasonHaenlin/*'
+          sg otake -c 'mv * /var/www/html/jasonHaenlin/'
+          '''
         }
       }
     }
