@@ -12,13 +12,6 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-}
-
 body {
     margin: 0;
     min-height: 100%;
@@ -43,11 +36,6 @@ html {
     z-index: 8;
 }
 
-.footer {
-    color: white;
-    width: 100%;
-}
-
 .main>.section:nth-child(1) {
     width: 40%;
     box-shadow: 3px -6px 13px var(--grayB);
@@ -55,6 +43,11 @@ html {
 
 .main>.section:nth-child(2) {
     width: 55%;
+}
+
+.footer {
+    color: white;
+    width: 100%;
 }
 
 svg {

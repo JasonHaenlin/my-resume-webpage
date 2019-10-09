@@ -25,8 +25,8 @@ pipeline {
       steps {
         echo 'Deployement'
         sh '''
-        sg otake -c 'rm -rf /var/www/html/jasonHaenlin/*'
-        sg otake -c 'mv * /var/www/html/jasonHaenlin/'
+        sg otake -c 'rm -rf /var/www/html/jasonhaenlin/*'
+        sg otake -c 'mv * /var/www/html/jasonhaenlin/'
         '''
       }
     }
