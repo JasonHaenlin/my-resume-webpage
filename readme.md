@@ -4,7 +4,7 @@
 
 ## Github : <https://github.com/JasonHaenlin/my-resume-webpage>
 
-## Deploiement : <https://otakedev.com/jasonhaenlin>
+## Deployment : <https://otakedev.com/jasonhaenlin>
 
 ### Relevant information
 
