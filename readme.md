@@ -18,7 +18,7 @@ For example, `item` and `item__title` means that `item__title` is nested in a `i
 
 On the header I used a `flex Container` to display the header title and subtitle on the same column and the image on an other column
 
-![headerFlex](resources\screens\Screen1.png)
+![headerFlex](resources/screens/Screen1.png)
 
 ```css
 .flex-container {
@@ -70,7 +70,7 @@ Also, like you can notice, I used a `z-index` to put this container bellow the o
 
 I had some issue to justify my text properly
 
-![justifyText](resources\screens\Screen2.png)
+![justifyText](resources/screens/Screen2.png)
 
 ```css
 .item__title {
