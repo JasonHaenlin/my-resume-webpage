@@ -123,7 +123,7 @@ For the progress bar, I used a simple svg with a mask to change the level of the
 
 ##### the right part
 
-![justifyText](resources\screens\Screen3.png)
+![justifyText](resources/screens/Screen3.png)
 
 To display properly the information, I used a `grid container` to structure my elements.
 
