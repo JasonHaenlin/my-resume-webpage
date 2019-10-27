@@ -124,6 +124,7 @@ circle {
 
 .profile-image--clip-circle {
     clip-path: circle(50.00% at center center);
+    -webkit-clip-path: circle(50.00% at center center);
 }
 
 .header__description {
