@@ -215,6 +215,7 @@ circle {
 
 .card__period {
     grid-area: period;
+    color: var(--grayB);
 }
 
 .card__description {
@@ -243,6 +244,10 @@ circle {
 @media (max-width: 550px) {
     .header__profile {
         height: 15em;
+    }
+
+    .card {
+        grid-template-columns: 1fr 6em;
     }
 }
 
@@ -341,10 +346,10 @@ circle {
     font-weight: 300;
 }
 
-/*@media print {
-    body {
-        width: 21cm;
-        height: 29.7cm;
-        margin: 30mm 45mm 30mm 45mm;
-    }
-} */
+/* body {
+    width: 42cm;
+    height: 59.4cm;
+    margin: 1mm 1mm 1mm 1mm;
+}
+
+*/
