@@ -23,6 +23,15 @@ html {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#mail {
+    color: black;
+}
+
 .header {
     color: white;
     position: relative;
