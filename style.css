@@ -212,7 +212,7 @@ circle {
 .card {
     display: grid;
     grid-template-columns: 1fr 10em;
-    grid-template-rows: minmax(2em, auto) minmax(3em, auto);
+    grid-template-rows: minmax(2em, auto) minmax(1em, auto);
     grid-template-areas:
         "title period"
         "description description";
