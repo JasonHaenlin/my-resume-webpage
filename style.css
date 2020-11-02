@@ -65,12 +65,12 @@ a {
 }
 
 .main>.section:nth-child(1) {
-    width: 40%;
+    width: 30%;
     box-shadow: 3px -6px 13px var(--grayB);
 }
 
 .main>.section:nth-child(2) {
-    width: 55%;
+    width: 70%;
 }
 
 .footer {
@@ -219,10 +219,10 @@ circle {
 
 .timeline-circle {
     position: relative;
-    right: 1em;
-    height: 2em;
-    width: 2em;
-    border: 0.5em solid var(--grayB);
+    right: 0.75em;
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.3em solid var(--grayB);
     border-radius: 50%;
     background-color: var(--blue1);
     float: left;
@@ -313,6 +313,13 @@ circle {
     padding-bottom: 0.5em;
 }
 
+.subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    color: gray;
+}
+
 .name {
     margin: 0;
     font-size: 20px;
@@ -322,7 +329,7 @@ circle {
 }
 
 .spacing-left {
-    padding-left: 4vw;
+    padding-left: 2vw;
 }
 
 .padding-around {
@@ -372,4 +379,9 @@ circle {
 .text {
     line-height: 25px;
     font-weight: 300;
+}
+
+.hint {
+    font-size: 0.95em;
+    color: rgb(49, 49, 49)
 }
