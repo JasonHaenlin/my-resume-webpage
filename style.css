@@ -6,15 +6,15 @@
     --redA: hsl(16, 76%, 42%);
     --clear: rgba(255, 255, 255, 0.1);
     --grayB: rgb(163, 162, 162);
+    --text: rgb(49, 49, 49);
 }
 
 * {
     box-sizing: border-box;
 }
 
-@page {
-    size: A4;
-    margin: 0;
+html {
+    font: 400 22px/32px 'Roboto', "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -23,60 +23,83 @@ body {
     width: 100%;
 }
 
-/* to print */
-/* .main {
-    height: 74.5%;
+@media print {
+    body {
+        width: 37cm !important;
+        height: 51.7cm !important;
+        margin: 30mm auto !important;
+        box-shadow: 3px -6px 13px var(--grayB);
+    }
+
+    html {
+        font: 400 18px/30px 'Roboto', "Helvetica Neue", sans-serif;
+    }
 }
 
-body {
-    width: 37cm;
-    height: 51.7cm;
-    margin: 30mm 45mm 30mm 45mm;
-} */
-
-@media print {}
-
-
-html {
-    font: 400 20px/32px 'Roboto', "Helvetica Neue", sans-serif;
-    /* height: 100%; */
+@page {
+    size: A4;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-position: outside;
+    margin: 0;
+}
+
+li {
+    line-height: 20px;
+}
+
+.header a {
     color: white;
 }
 
-#mail {
-    color: black;
+.main a {
+    color: var(--text);
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 
 .header {
     color: white;
-    position: relative;
     z-index: 10;
-    width: 100%;
+    flex: 0 1 auto;
 }
 
 .main {
     display: flex;
     background-color: var(--clear);
     z-index: 8;
-}
-
-.main>.section:nth-child(1) {
-    width: 30%;
-    box-shadow: 3px -6px 13px var(--grayB);
-}
-
-.main>.section:nth-child(2) {
-    width: 70%;
+    flex: 1 1 auto;
 }
 
 .footer {
     color: white;
     width: 100%;
+    flex: 0 1 5em;
 }
+
+.main>.section:nth-child(1) {
+    width: 35%;
+    box-shadow: 3px -6px 13px var(--grayB);
+}
+
+.main>.section:nth-child(2) {
+    width: 65%;
+}
+
 
 svg {
     height: 100%;
@@ -84,9 +107,8 @@ svg {
 }
 
 img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -95,7 +117,7 @@ img {
 }
 
 .background-circle {
-    padding: 0.3em;
+    /* padding: 0.1em; */
     border-radius: 50%;
     background-color: var(--clear);
 }
@@ -168,7 +190,7 @@ circle {
 }
 
 .icon--small {
-    width: 4em;
+    width: 1em;
 }
 
 .icon--medium {
@@ -211,7 +233,7 @@ circle {
 .item--bottom-line::before {
     position: absolute;
     height: 1px;
-    width: 100%;
+    width: 95%;
     background-color: var(--grayB);
     content: "";
     bottom: -0.5em;
@@ -230,7 +252,7 @@ circle {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 10em;
+    grid-template-columns: 70% 30%;
     grid-template-rows: minmax(2em, auto) minmax(1em, auto);
     grid-template-areas:
         "title period"
@@ -244,6 +266,7 @@ circle {
 .card__period {
     grid-area: period;
     color: var(--grayB);
+    font-size: 0.9em;
 }
 
 .card__description {
@@ -265,8 +288,9 @@ circle {
     background-color: var(--blue2);
 }
 
-.footer-information {
+.footer-border {
     background-color: var(--blue1);
+    padding-top: 1em;
 }
 
 @media (max-width: 550px) {
@@ -305,16 +329,17 @@ circle {
 }
 
 .title {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: bold;
     letter-spacing: 0em;
     line-height: 40px;
-    padding-top: 1em;
+    padding-top: 0.5em;
     padding-bottom: 0.5em;
+    color: var(--blue3);
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 0em;
     color: gray;
@@ -343,6 +368,16 @@ circle {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
+}
+
+.flex-justify {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-justify>:nth-child(1) {
+    width: 1.5em;
 }
 
 @media (max-width: 1100px) {
@@ -381,7 +416,16 @@ circle {
     font-weight: 300;
 }
 
-.hint {
+.item_section>div {
+    line-height: 1.3em;
+}
+
+.text_detail {
     font-size: 0.95em;
-    color: rgb(49, 49, 49)
+    color: var(--text);
+}
+
+.text_title {
+    font-size: 0.95em;
+    color: var(--redA);
 }

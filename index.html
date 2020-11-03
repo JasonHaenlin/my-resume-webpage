@@ -5,9 +5,11 @@
     <title>Curriculum Vitae Jason Haenlin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="./static/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./static/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="content">
     <header class="header">
         <div class="header__title spacing-left">
             <!-- <div class="bottom-border">Curriculum Vitae</div> -->
@@ -20,87 +22,127 @@
                 </div>
             </div>
             <div class="flex-container--col1">
+                <div class="container">
+                    <div class="flex-justify">
+                        <span class="fas fa-phone"></span>
+                        <span class="item__detail">+33 6 20 85 25 02</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-at"></span>
+                        <span class="item__detail"><a id="mail"
+                                href="mailto:jason.haenlin@gmail.com">jason.haenlin@gmail.com</a></span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-map-marker"></span>
+                        <span class="item__detail">Valbonne (Sophia) 06</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-user"></span>
+                        <span class="item__detail">25 ans, Français</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span>
+                            <img class="icon--small background-circle" src="./resources/icon.png"
+                                alt="Portfolio Jason Haenlin logo">
+                        </span>
+                        <span class="item__detail">
+                            <a href="https://portfolio.otakedev.com" target="_blank"
+                                rel="noopener noreferrer">
+                                portfolio.otakedev.com
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container--col1">
                 <div class="profile-image profile-image--clip-circle"></div>
             </div>
         </div>
         <div class="header__description spacing-left">
-            Recherche un stage en IHM (Interaction Homme Machine) de 6 mois
+            Recherche un stage en IHM (Interaction Homme Machine) de 6 mois à partir de Mars
         </div>
     </header>
 
     <main class="main">
         <section class="spacing-left section">
             <div class="container">
-                <div class="title"></div>
-                <!-- <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Nationalité</span>
-                    <span class="item__detail">Française</span>
-                </div> -->
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Téléphone</span>
-                    <span class="item__detail">+33 6 20 85 25 02</span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Mail</span>
-                    <span class="item__detail"><a id="mail"
-                            href="mailto:jason.haenlin@gmail.com">jason.haenlin@gmail.com</a></span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Localisation</span>
-                    <span class="item__detail">Valbonne (Sophia) 06</span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify"></span>
-                    <span class="item__detail">25 ans, Français</span>
+                <div class="title">FORMATION</div>
+                <div class="item item--left-line">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">Université de Polytech
+                                Nice'Sophia</span>
+                            <span class="card__period item__title">En Cours</span>
+                            <span class="card__description item__detail">3ème année cycle
+                                ingénieur
+                                spécialisation Science Informatique. Classement semestriel dans les
+                                10 premiers</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">Institut Universitaire de
+                                Nice</span>
+                            <span class="card__period item__title">2017</span>
+                            <span class="card__description item__detail">Diplôme
+                                universitaire et
+                                technologique en Génie Electrique et Informatique
+                                Industrielle (Major en 1ère année)</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">Lycée Léons Chiris à
+                                Grasse</span>
+                            <span class="card__period item__title">2014</span>
+                            <span class="card__description item__detail">BAC
+                                professionnel
+                                Electrotechnique (avec mention)
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container">
                 <div class="title">LOGICIELS</div>
                 <div class="item">
-                    <span class="item__title item__title--justify">JAVA</span>
+                    <span class="item__title item__title--justify">Java</span>
                     <span class="item__progress-bar">
                         <svg>
                             <!-- All the masks for this section -->
                             <defs>
                                 <mask id="progress100">
-                                    <rect width="100%" height="100%" x="-0%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-0%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress90">
-                                    <rect width="100%" height="100%" x="-10%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-10%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress80">
-                                    <rect width="100%" height="100%" x="-20%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-20%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress70">
-                                    <rect width="100%" height="100%" x="-30%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-30%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress60">
-                                    <rect width="100%" height="100%" x="-40%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-40%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress50">
-                                    <rect width="100%" height="100%" x="-50%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-50%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress40">
-                                    <rect width="100%" height="100%" x="-60%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-60%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress30">
-                                    <rect width="100%" height="100%" x="-70%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-70%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress20">
-                                    <rect width="100%" height="100%" x="-0%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-0%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress10">
-                                    <rect width="100%" height="100%" x="-20%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-20%" y="0" fill="#fff" />
                                 </mask>
                             </defs>
                             <!-- End of the masks -->
@@ -129,6 +171,15 @@
                         </svg>
                     </span>
                     <br>
+                    <span class="item__title item__title--justify">Git</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress90)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
                     <span class="item__title item__title--justify">Javascript</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
@@ -139,15 +190,6 @@
                     </span>
                     <br>
                     <span class="item__title item__title--justify">Nodejs</span>
-                    <span class="item__progress-bar"><svg>
-                            <rect class="background" width="100%" height="100%" rx="2" />
-                            <g mask="url(#progress80)">
-                                <rect class="fill" width="100%" height="100%" rx="2" />
-                            </g>
-                        </svg>
-                    </span>
-                    <br>
-                    <span class="item__title item__title--justify">Git</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress80)">
@@ -174,7 +216,7 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">Dart</span>
+                    <span class="item__title item__title--justify">Jenkins</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress50)">
@@ -183,7 +225,7 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">Jenkins</span>
+                    <span class="item__title item__title--justify">Docker</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress50)">
@@ -222,37 +264,64 @@
                 </div>
             </div>
             <div class="container">
+                <div class="title">LANGUES</div>
+                <div>
+                    <span class="item__title item__title--justify">ANGLAIS</span>
+                    <span class="item__detail">Niveau B2, TOEIC 870/990</span>
+                </div>
+
+                <div>
+                    <span class="item__title item__title--justify">JAPONAIS</span>
+                    <span class="item__detail">Niveau intermédiaire</span>
+                </div>
+
+                <div>
+                    <span class="item__title item__title--justify">CHINOIS</span>
+                    <span class="item__detail">Quelques notions</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">VOYAGES</div>
+                <div>
+                    <span class="item__title item__title--justify">Floride</span>
+                    <span class="item__detail">2 voyages</span>
+                </div>
+                <div>
+                    <span class="item__title item__title--justify">Japon</span>
+                    <span class="item__detail">2 séjours linguistiques, 4 et 3 semaines</span>
+                </div>
+                <div>
+                    <span class="item__title item__title--justify">Corée</span>
+                    <span class="item__detail">1 séjour linguistique, 3 semaines</span>
+                </div>
+            </div>
+            <div class="container">
                 <div class="title">LOISIRS</div>
                 <div class="flex-container">
                     <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/coding.png"
-                            alt="coding-icon">
-                        <div class="text-center name">Coder</div>
+                        <img class="icon--medium" src="./resources/coding.png" alt="coding-icon">
+                        <div class="text-center name">Code</div>
                     </div>
                     <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/cooking.png"
-                            alt="cooking-icon">
-                        <div class="text-center name">Cuisiner</div>
+                        <img class="icon--medium" src="./resources/cooking.png" alt="cooking-icon">
+                        <div class="text-center name">Cuisine</div>
                     </div>
                     <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/gaming.png"
-                            alt="gaming-icon">
+                        <img class="icon--medium" src="./resources/gaming.png" alt="gaming-icon">
                         <div class="text-center name">Gaming</div>
                     </div>
                     <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/music.png"
-                            alt="music-icon">
+                        <img class="icon--medium" src="./resources/music.png" alt="music-icon">
                         <div class="text-center name">Musique</div>
                     </div>
                     <div class="icon-container margin-around">
                         <img class="icon--medium" src="./resources/traveling.png"
                             alt="traveling-icon">
-                        <div class="text-center name">Voyager</div>
+                        <div class="text-center name">Voyage</div>
                     </div>
                     <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/walking.png"
-                            alt="walking-icon">
-                        <div class="text-center name">Marcher</div>
+                        <img class="icon--medium" src="./resources/walking.png" alt="walking-icon">
+                        <div class="text-center name">Marche</div>
                     </div>
                 </div>
                 <br>
@@ -260,246 +329,349 @@
         </section>
 
         <section class="spacing-left section">
-            <div class="container">
-                <div class="title">FORMATION</div>
-                <div class="item item--left-line">
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Université de Polytech
-                                Nice-Sophia</span>
-                            <span class="card__period item__title">En Cours</span>
-                            <span class="card__description item__detail">2ème année en cycle
-                                ingénieur
-                                spécialisation Science Informatique</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Institut Universitaire de
-                                Nice</span>
-                            <span class="card__period item__title">2017</span>
-                            <span class="card__description item__detail">Obtention du diplôme
-                                universitaire et
-                                technologique en Génie Electrique et Informatique
-                                Industrielle (Major en 1ère année)</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Lycée Léons Chiris à
-                                Grasse</span>
-                            <span class="card__period item__title">2014</span>
-                            <span class="card__description item__detail">Obtention du BAC
-                                professionnel
-                                Electrotechnique (avec mention)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="container">
-                <div class="title">COMPETENCES PROFESSIONNELLES</div>
-                <div class="item flex-container">
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="0" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Enthousiasme</div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 52%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Travail d'équipe
-                        </div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 75%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Autonome</div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 75%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Rigoureux</div>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="container">
                 <div class="title">PROJETS UNIVERSITAIRES</div>
                 <div class="item item--left-line">
                     <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Projet Flutter & Antlr Java</span>
-                            <span class="card__period item__title">Janvier 2020</span>
-                            <span class="card__description item__detail">
-                                Polytech Nice Sophia. Projet à temps plein de 3 semaines pour les
-                                jeux olympiques paris.
-                                <br>
-                                Création d'un langage dédié avec Antlr tourné métier pour
-                                l'organisateur et élaboration d'une application en flutter pour
-                                aider à la navigation des utilisateurs.
+                            <span class="card__title item__title">"Blue Galactic X" | Architecture
+                                Orientée
+                                Services </span>
+                            <span class="card__period item__title">Sept, Nov
+                                2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Spring-boot - mongoDB - Docker -
+                                        Kafka - gRPC - Jenkins</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>14 micro-services orientés DDD avec une
+                                                Architecture Hexagonale</li>
+                                            <li>Devops avec Docker et Jenkins sur mon VPS Ubuntu
+                                            </li>
+                                            <li>Gestion de la persistance avec mongoDB</li>
+                                            <li>Equipe de 4 avec une méthodologie SCRUM</li>
+                                            <li>Découplage fort avec une communication par bus de
+                                                messages avec Kafka
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Projet Web Angular7 &
-                                Nodejs</span>
-                            <span class="card__period item__title">Février, Juin 2019</span>
-                            <span class="card__description item__detail">
-                                Polytech Nice Sophia. Un projet semestriel consistant en un site
-                                web
-                                pour aider les
-                                étudiants à préparer leur séjour à
-                                l'étranger. <br>
-                                <span class="hint">
-                                    Framework : Angular 7 + Nodejs + Knexj + PostgreSQL <br>
-                                    CI : Jenkins + SonarQube + Snyk + OWASP ZAP<br>
-                                </span>
+                            <span class="card__title item__title">"Gred" | Mobile
+                            </span>
+                            <span class="card__period item__title">Sept, Oct 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Flutter - Android</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Change Notifier Provider Pattern pour séparer l'UI
+                                                du métier </li>
+                                            <li>Lister une recette de cuisine étape par étape</li>
+                                            <li>Gérer l'adaptation des dispositifs (taille et
+                                                orientation)</li>
+                                            <li>Mode vocal pour dire des commandes à l'application
+                                            </li>
+                                            <li>Channel pour communiquer de Dart vers Kotlin pour
+                                                gérer le son du dispositif Android</li>
+                                            <li>Equipe de 2 avec une méthodologie SCRUM</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Process" | Web & Backend
+                            </span>
+                            <span class="card__period item__title">3 semaines - Mai 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Angular 9 - Nodejs - Sequelize (ORM) -
+                                        SQLite</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Elaborer une solution innovante en analysant l'étude
+                                                de l'art lié à notre idée</li>
+                                            <li>Equipe de 4 avec une méthodologie SCRUM</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"JO Paris 2024" | Mobile,
+                                Backend & Langage dédié</span>
+                            <span class="card__period item__title">3 semaines - Janv 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Antlr - Nodejs - Flutter Mobile & Web
+                                        - Bloc Pattern - Jenkins - SonarQube</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Flutter avec Bloc Pattern pour séparer l'UI du
+                                                métier</li>
+                                            <li>Langage dédié pour définir le comportement de
+                                                l'application</li>
+                                            <li>UI Web intégrant le projet Flutter Web pour
+                                                exécuter la logique du langage dédié avant
+                                                déploiement</li>
+                                            <li>Devops avec mon VPS utilisant Jenkins pour déployer
+                                                le site et compiler le projet Flutter
+                                            </li>
+                                            <li>Equipe de 4 avec une méthodologie SCRUM</li>
+                                            <li>Daily meeting avec livraison fonctionnelle chaque
+                                                semaine</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Séjour à
+                                l'étranger des étudiants" | Web & Backend</span>
+                            <span class="card__period item__title">Févr, Juin 2019</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Angular 7 - NodeJS - ORM Knex - SQLite
+                                        - PSQL -
+                                        OWASP ZAP - Snyk - Jenkins</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Design : Elaboration des mockups avec Balsamiq</li>
+                                            <li>Permissions avec NPM passport & Guard Angular pour
+                                                protéger les routes</li>
+                                            <li>Knex pour gérer la migration et création des BD</li>
+                                            <li>ORM pour vérifier le modèle et la mise en cache</li>
+                                            <li>3 versions de BD pour le dev, staging et production
+                                            </li>
+                                            <li>Devops redéploiement de l'application avec la
+                                                vérification des vulnérabilités</li>
+                                            <li>Framework Nodejs maison avec les
+                                                bonnes pratiques (log, sécurité, exception,
+                                                structure, etc.)
+                                            </li>
+                                            <li>Création de formulaire (url) avec token transmis par
+                                                mail à
+                                                utilisation unique</li>
+                                            <li>DataDog pour record tous les logs de notre
+                                                application</li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="title">EXPÉRIENCE PROFESSIONNELLE</div>
-                    <div class="item item--left-line">
-                        <div class="item">
-                            <div class="timeline-circle"></div>
-                            <div class="card item--bottom-line">
-                                <span class="card__title item__title">Ingénieur logiciel - Stagiaire
-                                    R&D</span>
-                                <span class="card__period item__title">Juin, Août 2020</span>
-                                <span class="card__description item__detail">
-                                    Accenture : Stage de 2 mois et demi dans la conception logiciels.
-                                    Dashboard KPI permettant de gérer les projets basés sur JIRA et d'avoir une vue rapide de son état d'avancement. Sprint, Epic, US, bugs, etc. <br>
-                                    <span class="hint">
-                                        Front : Angular 10 + NgRx + RxJs + Angular Material<br>
-                                        Back : Spring boot + AspectJ + Spring security + mongoDB + API JIRA
+            </div>
+            <div class="container">
+                <div class="title">EXPÉRIENCE PROFESSIONNELLE</div>
+                <div class="item item--left-line">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Dashboard KPI" | Web &
+                                Backend</span>
+                            <span class="card__period item__title">Juin, Août 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Ingénieur logiciel - Stagiaire
+                                        R&D</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Angular 10 - NgRx - Angular Material -
+                                        Spring-boot - AspectJ - MongoDB - Cypress</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Récupérer et mettre en forme les ressources d'un
+                                                projet via l'API Rest de JIRA</li>
+                                            <li>Création d'un thème Material Angular pour le site
+                                            </li>
+                                            <li>Dashboard avec métriques et graphe (Sprint, Epic,
+                                                US, bugs, etc.)</li>
+                                            <li>Gestion des permissions et sessions avec Spring
+                                                sécurité et Angular Guard</li>
+                                            <li>Mulitple rôles par dashboard : Viewer, Editor et
+                                                Administrator</li>
+                                            <li>AOP pour les préoccupations transversales (ex :
+                                                logs)</li>
+                                            <li>Encadré par 6 superviseurs pour aider à la
+                                                planification (Planing, Retrospective, daily
+                                                meeting, démo)</li>
+                                            <li>Démo de fin de projet en Anglais devant +30
+                                                personnes</li>
+                                        </ul>
                                     </span>
-                                </span>
-                            </div>
+                                </div>
+                            </span>
                         </div>
-                        <div class="item">
-                            <div class="timeline-circle"></div>
-                            <div class="card item--bottom-line">
-                                <span class="card__title item__title">Stage R&D en IOT</span>
-                                <span class="card__period item__title">Juin, Juillet 2018</span>
-                                <span class="card__description item__detail">
-                                    Fantastic Sourcing. Programmation d'un système avec la
-                                    plateforme Node-red pour gèrer un réseau de capteurs.
-                                </span>
-                            </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Receptif Voyages" | Web
+                            </span>
+                            <span class="card__period item__title">Sept, Juill
+                                2019</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Frontend Dev Freelance</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">Angular 10 - Jenkins</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Contrainte : site backless</li>
+                                            <li>Refonte complète de l'ancien site</li>
+                                            <li>Analyses des besoins et mockups avec AdobeXD</li>
+                                            <li>Optimisation SEO et Progressive Web App</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
                         </div>
                     </div>
                     <!-- <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Fantastic Sourcing</span>
-                            <span class="card__period item__title">Avril, Juillet 2017</span>
-                            <span class="card__description item__detail">
-                                Stage R&D en informatique et électronique. Elaboration de
-                                prototype
-                                de capteurs avec l'utilisation de µContrôleur Arduino.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Azur Domotique</span>
-                            <span class="card__period item__title">Mars, Avril 2014</span>
-                            <span class="card__description item__detail">
-                                Formation technicien en automatisme.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Ets Perez</span>
-                            <span class="card__period item__title">Novembre, Décembre
-                                2012</span>
-                            <span class="card__description item__detail">
-                                Formation en antenniste et technicien en électroménager.
+                            <span class="card__title item__title">"Nodeus" | IOT</span>
+                            <span class="card__period item__title">7 semaines - Juin, Juill
+                                2018</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Ingénieur stagiaire en R&D</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Stacks Techniques :</span>
+                                    <span class="text_detail">NodeRed - Arduino - RaspberryPI -
+                                        MQTT</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Réalisations :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Réutilisation d'un réseau de capteur pour
+                                                déclencher des actions en fonction des données reçus
+                                            </li>
+                                            <li>Package NodeRed avec une multitude de bloque (ex :
+                                                porte logique, seuil, variation)</li>
+                                            <li>Ajout d'une prise connecté activable via un Arduino
+                                                pour déclencher des actions</li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div> -->
                 </div>
-            </div>
-            <div class="flex-container">
-                <div class="padding-around">
-                    <div class="title">LANGUES</div>
-                    <span class="item__title item__title--justify">ANGLAIS</span>
-                    <span class="item__detail">Niveau B2, TOEIC 870/990</span>
-                    <br>
-                    <span class="item__title item__title--justify">JAPONAIS</span>
-                    <span class="item__detail">Niveau intermédiaire</span>
-                    <br>
-                    <span class="item__title item__title--justify">COREEN</span>
-                    <span class="item__detail">Niveau Débutant</span>
-                    <br>
-                    <span class="item__title item__title--justify">CHINOIS</span>
-                    <span class="item__detail">Quelques notions</span>
+                <!-- <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Fantastic Sourcing</span>
+                        <span class="card__period item__title">Avril, Juillet 2017</span>
+                        <span class="card__description item__detail">
+                            Stage R&D en informatique et électronique. Elaboration de
+                            prototype
+                            de capteurs avec l'utilisation de µContrôleur Arduino.
+                        </span>
+                    </div>
                 </div>
-                <div class="padding-around">
-                    <div class="title">VOYAGES</div>
-                    <div class="item__detail">Floride (USA) 2 voyages</div>
-                    <div class="item__detail">Japon, 2 séjours linguistiques</div>
-                    <div class="item__detail">Corée, 1 séjour linguistique</div>
-                    <br>
+                <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Azur Domotique</span>
+                        <span class="card__period item__title">Mars, Avril 2014</span>
+                        <span class="card__description item__detail">
+                            Formation technicien en automatisme.
+                        </span>
+                    </div>
                 </div>
+                <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Ets Perez</span>
+                        <span class="card__period item__title">Novembre, Décembre
+                            2012</span>
+                        <span class="card__description item__detail">
+                            Formation en antenniste et technicien en électroménager.
+                        </span>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-link flex-container flex-center padding-around">
+    <footer class="footer-border">
+        <!-- <div class="footer-link flex-container flex-center padding-around">
             <a href="https://github.com/JasonHaenlin" target="_blank" rel="noopener noreferrer">
                 <div class="padding-around">
                     <img class="icon--small background-circle"
-                        src="./resources/GitHub-Mark-Light-120px-plus.png"
-                        alt="Github logo">
+                        src="./resources/GitHub-Mark-Light-120px-plus.png" alt="Github logo">
                     <div class="text-center name margin-around">/JasonHaenlin</div>
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/jason-haenlin/" target="_blank"
                 rel="noopener noreferrer">
                 <div class="padding-around">
-                    <img class="icon--small background-circle"
-                        src="./resources/LI-In-Bug.png"
+                    <img class="icon--small background-circle" src="./resources/LI-In-Bug.png"
                         alt="Linkedin logo">
                     <div class="text-center name margin-around">/in/jason-haenlin</div>
                 </div>
             </a>
             <a href="https://portfolio.otakedev.com" target="_blank" rel="noopener noreferrer">
                 <div class="padding-around">
-                    <img class="icon--small background-circle"
-                        src="./resources/icon.png"
+                    <img class="icon--small background-circle" src="./resources/icon.png"
                         alt="Linkedin logo">
                     <div class="text-center name margin-around">portfolio.otakedev.com</div>
                 </div>
             </a>
-        </div>
-        <div class=" text-center text footer-information padding-around">
-            <span>Tel : +33 6 20 85 25 02</span>
-            <br>
-            <span><a href="mailto:jason.haenlin@gmail.com">@mail :
-                    jason.haenlin@gmail.com</a></span>
-        </div>
+        </div> -->
     </footer>
 </body>
 
