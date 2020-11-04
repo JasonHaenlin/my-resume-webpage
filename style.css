@@ -14,7 +14,7 @@
 }
 
 html {
-    font: 400 22px/32px 'Roboto', "Helvetica Neue", sans-serif;
+    font: 400 24px/34px 'Roboto', "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     }
 
     html {
-        font: 400 18px/30px 'Roboto', "Helvetica Neue", sans-serif;
+        font: 400 22px/30px 'Roboto', "Helvetica Neue", sans-serif;
     }
 }
 
@@ -55,7 +55,7 @@ ul {
 }
 
 li {
-    line-height: 20px;
+    line-height: 24px;
 }
 
 .header a {
@@ -293,18 +293,15 @@ circle {
     padding-top: 1em;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1300px) {
     .header__profile {
-        height: 15em;
+        height: 18em;
     }
 
     .card {
         grid-template-columns: 1fr 6em;
     }
-}
 
-
-@media (max-width: 1100px) {
     .main {
         display: block;
     }
@@ -412,20 +409,18 @@ circle {
 }
 
 .text {
-    line-height: 25px;
+    line-height: 30px;
     font-weight: 300;
 }
 
 .item_section>div {
-    line-height: 1.3em;
+    line-height: 1.1em;
 }
 
 .text_detail {
-    font-size: 0.95em;
     color: var(--text);
 }
 
 .text_title {
-    font-size: 0.95em;
     color: var(--redA);
 }
