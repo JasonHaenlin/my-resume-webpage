@@ -1,22 +1,55 @@
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Resume Jason Haenlin</title>
+    <title>Curriculum Vitae Jason Haenlin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="./static/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./static/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="content">
     <header class="header">
         <div class="header__title spacing-left">
-            <!-- <div class="bottom-border">Resume</div> -->
+            <!-- <div class="bottom-border">Curriculum Vitae</div> -->
         </div>
         <div class="header__profile spacing-left flex-container">
             <div class="flex-container--col4">
                 <div class="header__profile__title">JASON HAENLIN</div>
-                <div class="header__profile__subtitle">Engineering student in Computer Science at
-                    Nice Sophia in 4th year
+                <div class="header__profile__subtitle">Computer Engineer specializing in HMI
+                </div>
+            </div>
+            <div class="flex-container--col1">
+                <div class="container">
+                    <div class="flex-justify">
+                        <span class="fas fa-phone"></span>
+                        <span class="item__detail">+33 6 20 85 25 02</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-at"></span>
+                        <span class="item__detail"><a id="mail"
+                                href="mailto:jason.haenlin@gmail.com">jason.haenlin@gmail.com</a></span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-map-marker"></span>
+                        <span class="item__detail">Valbonne (Sophia) 06</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span class="fas fa-user"></span>
+                        <span class="item__detail">25 year old, French</span>
+                    </div>
+                    <div class="flex-justify">
+                        <span>
+                            <img class="icon--small background-circle" src="./resources/icon.png"
+                                alt="Portfolio Jason Haenlin logo">
+                        </span>
+                        <span class="item__detail">
+                            <a href="https://portfolio.otakedev.com" target="_blank" rel="noopener noreferrer">
+                                portfolio.otakedev.com
+                            </a>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="flex-container--col1">
@@ -24,90 +57,101 @@
             </div>
         </div>
         <div class="header__description spacing-left">
-            Looking for an internship of 2-3 months in the summer and/or an work-study program for
-            the last year
-            in HMI.
+            Seeking a position as a polyvalent Angular developer (FrontEnd, BackEnd, DevOps)
         </div>
     </header>
 
     <main class="main">
         <section class="spacing-left section">
             <div class="container">
-                <div class="title"></div>
-                <!-- <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Nationalité</span>
-                    <span class="item__detail">Française</span>
-                </div> -->
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Phone</span>
-                    <span class="item__detail">+33 6 20 85 25 02</span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Mail</span>
-                    <span class="item__detail"><a id="mail"
-                            href="mailto:jason.haenlin@gmail.com">jason.haenlin@gmail.com</a></span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify">Localisation</span>
-                    <span class="item__detail">Valbonne (Sophia) 06</span>
-                </div>
-                <div class="item item--bottom-line">
-                    <span class="item__title item__title--justify"></span>
-                    <span class="item__detail">25 years old, French</span>
+                <div class="title">EDUCATION</div>
+                <div class="item item--left-line">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">University of Polytech
+                                Nice-Sophia</span>
+                            <span class="card__period item__title">2021</span>
+                            <span class="card__description item__detail">Validation of the last year of specialization
+                                in computer science. Top 10 ranking of the year</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">University and Technology
+                                Institute of Nice</span>
+                            <span class="card__period item__title">2017</span>
+                            <span class="card__description item__detail">Obtaining a university and
+                                technological diploma in Electrical Engineering and Industrial
+                                Computing
+                                (Major in 1st year))</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">Léons Chiris High School in
+                                Grasse</span>
+                            <span class="card__period item__title">2014</span>
+                            <span class="card__description item__detail">Obtaining the professional
+                                Bachelor's Degree in Electrical Engineering (with honours)
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="title">SOFTWARE</div>
+                <div class="title">Technical Stacks</div>
                 <div class="item">
-                    <span class="item__title item__title--justify">JAVA</span>
+                    <span class="item__title item__title--justify">Java</span>
                     <span class="item__progress-bar">
                         <svg>
                             <!-- All the masks for this section -->
                             <defs>
                                 <mask id="progress100">
-                                    <rect width="100%" height="100%" x="-0%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-0%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress90">
-                                    <rect width="100%" height="100%" x="-10%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-10%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress80">
-                                    <rect width="100%" height="100%" x="-20%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-20%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress70">
-                                    <rect width="100%" height="100%" x="-30%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-30%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress60">
-                                    <rect width="100%" height="100%" x="-40%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-40%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress50">
-                                    <rect width="100%" height="100%" x="-50%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-50%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress40">
-                                    <rect width="100%" height="100%" x="-60%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-60%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress30">
-                                    <rect width="100%" height="100%" x="-70%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-70%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress20">
-                                    <rect width="100%" height="100%" x="-0%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-0%" y="0" fill="#fff" />
                                 </mask>
                                 <mask id="progress10">
-                                    <rect width="100%" height="100%" x="-20%" y="0"
-                                        fill="#fff" />
+                                    <rect width="100%" height="100%" x="-20%" y="0" fill="#fff" />
                                 </mask>
                             </defs>
                             <!-- End of the masks -->
                             <rect class="background" width="100%" height="100%" rx="2" />
-                            <g mask="url(#progress90)">
+                            <g mask="url(#progress100)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="item__title item__title--justify">Angular(TS)</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress100)">
                                 <rect class="fill" width="100%" height="100%" rx="2" />
                             </g>
                         </svg>
@@ -122,7 +166,7 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">Angular (TS)</span>
+                    <span class="item__title item__title--justify">Git</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress90)">
@@ -149,6 +193,15 @@
                         </svg>
                     </span>
                     <br>
+                    <span class="item__title item__title--justify">Spring Boot</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress70)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
                     <span class="item__title item__title--justify">Flutter</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
@@ -158,19 +211,10 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">Dart</span>
+                    <span class="item__title item__title--justify">Golang</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
-                            <g mask="url(#progress70)">
-                                <rect class="fill" width="100%" height="100%" rx="2" />
-                            </g>
-                        </svg>
-                    </span>
-                    <br>
-                    <span class="item__title item__title--justify">Git</span>
-                    <span class="item__progress-bar"><svg>
-                            <rect class="background" width="100%" height="100%" rx="2" />
-                            <g mask="url(#progress70)">
+                            <g mask="url(#progress60)">
                                 <rect class="fill" width="100%" height="100%" rx="2" />
                             </g>
                         </svg>
@@ -185,7 +229,16 @@
                         </svg>
                     </span>
                     <br>
-                    <span class="item__title item__title--justify">SQL</span>
+                    <span class="item__title item__title--justify">Docker</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress50)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="item__title item__title--justify">Kafka</span>
                     <span class="item__progress-bar"><svg>
                             <rect class="background" width="100%" height="100%" rx="2" />
                             <g mask="url(#progress40)">
@@ -193,265 +246,415 @@
                             </g>
                         </svg>
                     </span>
+                    <br>
+                    <span class="item__title item__title--justify">ReactJS</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress40)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="item__title item__title--justify">VueJS</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress40)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="item__title item__title--justify">SQL/NOSQL</span>
+                    <span class="item__progress-bar"><svg>
+                            <rect class="background" width="100%" height="100%" rx="2" />
+                            <g mask="url(#progress40)">
+                                <rect class="fill" width="100%" height="100%" rx="2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <div class="subtitle">Personal evaluation based on my reference</div>
                 </div>
             </div>
             <div class="container">
-                <div class="title">HOBBIES</div>
-                <div class="flex-container">
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/coding.png"
-                            alt="coding-icon">
-                        <div class="text-center name">Coding</div>
-                    </div>
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/cooking.png"
-                            alt="cooking-icon">
-                        <div class="text-center name">Cooking</div>
-                    </div>
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/gaming.png"
-                            alt="gaming-icon">
-                        <div class="text-center name">Gaming</div>
-                    </div>
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/music.png"
-                            alt="music-icon">
-                        <div class="text-center name">Music</div>
-                    </div>
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/traveling.png"
-                            alt="traveling-icon">
-                        <div class="text-center name">Travel</div>
-                    </div>
-                    <div class="icon-container margin-around">
-                        <img class="icon--medium" src="./resources/walking.png"
-                            alt="walking-icon">
-                        <div class="text-center name">Walking</div>
-                    </div>
+                <div class="title">LANGUAGES</div>
+                <div>
+                    <span class="item__title item__title--justify">ENGLISH</span>
+                    <span class="item__detail">B2 level, TOEIC 925/990</span>
                 </div>
-                <br>
+
+                <div>
+                    <span class="item__title item__title--justify">JAPANESE</span>
+                    <span class="item__detail">Beginner level</span>
+                </div>
+
+                <div>
+                    <span class="item__title item__title--justify">KOREAN</span>
+                    <span class="item__detail">Some notions</span>
+                </div>
+
+                <div>
+                    <span class="item__title item__title--justify">CHINESE</span>
+                    <span class="item__detail">Some notions</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">TRAVEL</div>
+                <div>
+                    <span class="item__title item__title--justify">Florida</span>
+                    <span class="item__detail">2 trips</span>
+                </div>
+                <div>
+                    <span class="item__title item__title--justify">Japan</span>
+                    <span class="item__detail">2 linguistics trips, 4 and 3 weeks</span>
+                </div>
+                <div>
+                    <span class="item__title item__title--justify">Corée</span>
+                    <span class="item__detail">1 linguistic trip, 3 weeks</span>
+                </div>
             </div>
         </section>
 
         <section class="spacing-left section">
-            <div class="container">
-                <div class="title">EDUCATION</div>
-                <div class="item item--left-line">
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">University of Polytech
-                                Nice-Sophia</span>
-                            <span class="card__period item__title">In Progress</span>
-                            <span class="card__description item__detail">2nd year in the engineering
-                                cycle specialising in Computer Science</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">University and Technology
-                                Institute of Nice</span>
-                            <span class="card__period item__title">2017</span>
-                            <span class="card__description item__detail">Obtaining a university and
-                                technological diploma in Electrical Engineering and Industrial
-                                Computing
-                                (Major in 1st year)</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Léons Chiris High School in
-                                Grasse</span>
-                            <span class="card__period item__title">2014</span>
-                            <span class="card__description item__detail">Obtaining the professional
-                                Bachelor's Degree in Electrical Engineering (with honours)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="container">
-                <div class="title">COMPETENCES PROFESSIONNELLES</div>
-                <div class="item flex-container">
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="0" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Enthousiasme</div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 52%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Travail d'équipe
-                        </div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 75%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Autonome</div>
-                    </div>
-                    <div class="item__achievement">
-                        <svg>
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#d3d3d3" />
-                            <circle cx="50%" cy="50%" r="65" fill="none" stroke="#3692a4"
-                                stroke-dasharray="360% 75%" />
-                        </svg>
-                        <div class="item__achievement__title text-center name">Rigoureux</div>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="container">
                 <div class="title">UNIVERSITY PROJECTS</div>
                 <div class="item item--left-line">
+                    <!-- <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Blue Galactic X" | Service Oriented
+                                Architecture</span>
+                            <span class="card__period item__title">Sep, Nov
+                                2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Spring-boot - mongoDB - Docker -
+                                        Kafka - gRPC - Jenkins</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>16 DDD oriented microservices with a Hexagonal Architecture</li>
+                                            <li>Devops with Docker and Jenkins on my Ubuntu VPS
+                                            </li>
+                                            <li>Persistence management with mongoDB</li>
+                                            <li>Team of 4 with a SCRUM and Pull Request methodology</li>
+                                            <li>Strong decoupling with a message bus communication with Kafka
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div> -->
                     <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Flutter & Antlr Java
-                                project</span>
-                            <span class="card__period item__title">January 2020</span>
-                            <span class="card__description item__detail">
-                                Polytech Nice Sophia. Full-time project of 3 weeks for the Olympic
-                                Games in Paris.
-                                <br>
-                                Creation of a dedicated language with Antlr business oriented for
-                                the organizer and development of
-                                an application in flutter to help user navigation.
+                            <span class="card__title item__title">"Gred" | Mobile
                             </span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">Angular7 &
-                                Nodejs web project</span>
-                            <span class="card__period item__title">February, June 2019</span>
-                            <span class="card__description item__detail">
-                                Polytech Nice Sophia. A semester project consisting of a website to
-                                help students prepare their stay
-                                abroad. <br>
-                                Framework : Nodejs + Knexj + PostgreSQL <br>
-                                CI: Jenkins + SonarQube + Snyk + OWASP ZAP<br>
-                                link : https://ps.otakedev.com
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="title">PROFESSIONAL EXPERIENCE</div>
-                    <div class="item item--left-line">
-                        <div class="timeline-circle"></div>
-                        <div class="card item--bottom-line">
-                            <span class="card__title item__title">R&D in IOT internship</span>
-                            <span class="card__period item__title">June, July 2018</span>
-                            <span class="card__description item__detail">
-                                Fantastic Sourcing. Programming a system with the Node-red platform
-                                to manage a network of sensors.
+                            <span class="card__period item__title">Sep, Oct 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Flutter - Android - Change Notifier
+                                        Provider Pattern</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>List a recipe step by step</li>
+                                            <li>Manage device adaptation (size and orientation)</li>
+                                            <li>Voice mode to say commands to the application
+                                            </li>
+                                            <li>Channel to communicate from Dart to Kotlin to manage Android voice API
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div>
                     <!-- <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Fantastic Sourcing</span>
-                            <span class="card__period item__title">Avril, Juillet 2017</span>
-                            <span class="card__description item__detail">
-                                Stage R&D en informatique et électronique. Elaboration de
-                                prototype
-                                de capteurs avec l'utilisation de µContrôleur Arduino.
+                            <span class="card__title item__title">"Process" | Web & Backend
+                            </span>
+                            <span class="card__period item__title">3 semaines - Mai 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Angular 9 - Nodejs - Sequelize (ORM) -
+                                        SQLite</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Elaborer une solution innovante en analysant l'étude
+                                                de l'art lié à notre idée</li>
+                                            <li>Equipe de 4 avec une méthodologie SCRUM</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div> -->
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"JO Paris 2024" | Mobile,
+                                Backend & Dedicated language</span>
+                            <span class="card__period item__title">3 weeks - Jan 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Antlr - Flutter Mobile & Web
+                                        - Bloc Pattern - Jenkins - Sonar</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Dedicated language to define the application's behavior</li>
+                                            <li>Web UI integrating Flutter to test the logic of the dedicated language
+                                            </li>
+                                            <li>Devops on VPS using Jenkins to deploy and build Flutter
+                                            </li>
+                                            <li>Team of 4 with a SCRUM methodology</li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Azur Domotique</span>
-                            <span class="card__period item__title">Mars, Avril 2014</span>
-                            <span class="card__description item__detail">
-                                Formation technicien en automatisme.
+                            <span class="card__title item__title">"Staying abroad for students" | Web & Backend</span>
+                            <span class="card__period item__title">Feb, Jun 2019</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Angular 7 - NodeJS - ORM Knex - SQLite
+                                        - PSQL -
+                                        OWASP ZAP - Snyk - Jenkins - Balsamiq - Datadog</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Permissions with NPM passport & Guard Angular to protect routes</li>
+                                            <li>Knex to manage migration and DB creation</li>
+                                            <li>ORM to check the model and caching</li>
+                                            <li>Homemade Nodejs framework with best practices
+                                            </li>
+                                            <li>Form creation with token transmitted by mail for single use</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">PROFESSIONAL EXPERIENCES</div>
+                <div class="item item--left-line">
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Amadeus : Debugging tool" | Web</span>
+                            <span class="card__period item__title">Mar, Sep 2021</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Software Engineer - Intern R&D</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Angular 12 - Angular Material - Cypress - Karma - Golang -
+                                        Docker - RxJS - NPM @jeiraon/state-holder (own package)</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Study on a generic table concept with tools (filter, comparison,
+                                                editing)</li>
+                                            <li>User-centered approach with demos, forms, meetings, etc.</li>
+                                            <li>Agile project with mocks, prototypes and development</li>
+                                            <li>Big optimization on Rendering, Angular and JS Events</li>
+                                            <li>Maintain the product, answer all questions and problems</li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="timeline-circle"></div>
                         <div class="card item--bottom-line">
-                            <span class="card__title item__title">Ets Perez</span>
-                            <span class="card__period item__title">Novembre, Décembre
-                                2012</span>
-                            <span class="card__description item__detail">
-                                Formation en antenniste et technicien en électroménager.
+                            <span class="card__title item__title">"Accenture : Dashboard KPI" | Web
+                                &
+                                Backend</span>
+                            <span class="card__period item__title">Jun, Aug 2020</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Software Engineer - Intern R&D</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Angular 10 - NgRx - Angular Material -
+                                        Spring-boot - AspectJ - MongoDB - Cypress</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Retrieve and format project resources via the JIRA API</li>
+                                            <li>Dashboard with metrics and graphs (Sprint, Epic, US, bugs, etc.)</li>
+                                            <li>Permission and session handling with Spring security and Angular Guard
+                                            </li>
+                                            <li>AOP for cross-functional concerns (e.g. logs)</li>
+                                            <li>Helped by 6 supervisors to plan (Planning, Retrospective, demo, etc.)
+                                            </li>
+                                            <li>End of project demo in English in front of 30+ people</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Receptif Voyages" | Web
+                            </span>
+                            <span class="card__period item__title">Sep, Jul
+                                2019</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Frontend Dev Freelance</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">Angular 10 - Jenkins</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Complete redesign of the old site</li>
+                                            <li>Needs analysis and mockups with AdobeXD and Zeplin</li>
+                                            <li>SEO optimization, images and Progressive Web App
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="item">
+                        <div class="timeline-circle"></div>
+                        <div class="card item--bottom-line">
+                            <span class="card__title item__title">"Nodeus" | IOT</span>
+                            <span class="card__period item__title">7 semaines - Juin, Juill
+                                2018</span>
+                            <span class="card__description item__detail item_section">
+                                <div>
+                                    <span class="text_title">Role :</span>
+                                    <span class="text_detail">Ingénieur stagiaire en R&D</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Technical Stacks :</span>
+                                    <span class="text_detail">NodeRed - Arduino - RaspberryPI -
+                                        MQTT</span>
+                                </div>
+                                <div>
+                                    <span class="text_title">Achievements :</span>
+                                    <span class="text_detail">
+                                        <ul>
+                                            <li>Réutilisation d'un réseau de capteur pour
+                                                déclencher des actions en fonction des données reçus
+                                            </li>
+                                            <li>Package NodeRed avec une multitude de bloque (ex :
+                                                porte logique, seuil, variation)</li>
+                                            <li>Ajout d'une prise connecté activable via un Arduino
+                                                pour déclencher des actions</li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </span>
                         </div>
                     </div> -->
                 </div>
-            </div>
-            <div class="flex-container">
-                <div class="padding-around">
-                    <div class="title">LANGUAGES</div>
-                    <span class="item__title item__title--justify">ENGLISH</span>
-                    <span class="item__detail">B2 level, TOEIC 870/990</span>
-                    <br>
-                    <span class="item__title item__title--justify">JAPANESE</span>
-                    <span class="item__detail">Intermediate level</span>
-                    <br>
-                    <span class="item__title item__title--justify">KOREAN</span>
-                    <span class="item__detail">Beginner level</span>
-                    <br>
-                    <span class="item__title item__title--justify">CHINESE</span>
-                    <span class="item__detail">Some notions</span>
+                <!-- <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Fantastic Sourcing</span>
+                        <span class="card__period item__title">Avril, Juillet 2017</span>
+                        <span class="card__description item__detail">
+                            Stage R&D en informatique et électronique. Elaboration de
+                            prototype
+                            de capteurs avec l'utilisation de µContRoleur Arduino.
+                        </span>
+                    </div>
                 </div>
-                <div class="padding-around">
-                    <div class="title">TRAVEL</div>
-                    <div class="item__detail">Florida (USA) 2 trips</div>
-                    <div class="item__detail">Japan, 2 linguistics trips</div>
-                    <div class="item__detail">South Korea, 1 linguistic trip</div>
-                    <br>
+                <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Azur Domotique</span>
+                        <span class="card__period item__title">Mars, Avril 2014</span>
+                        <span class="card__description item__detail">
+                            Formation technicien en automatisme.
+                        </span>
+                    </div>
                 </div>
+                <div class="item">
+                    <div class="timeline-circle"></div>
+                    <div class="card item--bottom-line">
+                        <span class="card__title item__title">Ets Perez</span>
+                        <span class="card__period item__title">Novembre, Décembre
+                            2012</span>
+                        <span class="card__description item__detail">
+                            Formation en antenniste et technicien en électroménager.
+                        </span>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-link flex-container flex-center padding-around">
+    <footer class="footer-border">
+        <!-- <div class="footer-link flex-container flex-center padding-around">
             <a href="https://github.com/JasonHaenlin" target="_blank" rel="noopener noreferrer">
                 <div class="padding-around">
                     <img class="icon--small background-circle"
-                        src="./resources/GitHub-Mark-Light-120px-plus.png"
-                        alt="Github logo">
+                        src="./resources/GitHub-Mark-Light-120px-plus.png" alt="Github logo">
                     <div class="text-center name margin-around">/JasonHaenlin</div>
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/jason-haenlin/" target="_blank"
                 rel="noopener noreferrer">
                 <div class="padding-around">
-                    <img class="icon--small background-circle"
-                        src="./resources/LI-In-Bug.png"
+                    <img class="icon--small background-circle" src="./resources/LI-In-Bug.png"
                         alt="Linkedin logo">
                     <div class="text-center name margin-around">/in/jason-haenlin</div>
                 </div>
             </a>
             <a href="https://portfolio.otakedev.com" target="_blank" rel="noopener noreferrer">
                 <div class="padding-around">
-                    <img class="icon--small background-circle"
-                        src="./resources/icon.png"
+                    <img class="icon--small background-circle" src="./resources/icon.png"
                         alt="Linkedin logo">
                     <div class="text-center name margin-around">portfolio.otakedev.com</div>
                 </div>
             </a>
-        </div>
-        <div class=" text-center text footer-information padding-around">
-            <span>Phone : +33 6 20 85 25 02</span>
-            <br>
-            <span><a href="mailto:jason.haenlin@gmail.com">@mail :
-                    jason.haenlin@gmail.com</a></span>
-        </div>
+        </div> -->
     </footer>
 </body>
 

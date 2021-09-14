@@ -23,18 +23,19 @@ body {
     width: 100%;
 }
 
-@media print {
-    body {
-        width: 37cm !important;
-        height: 51.7cm !important;
-        margin: 30mm auto !important;
-        box-shadow: 3px -6px 13px var(--grayB);
-    }
-
-    html {
-        font: 400 22px/30px 'Roboto', "Helvetica Neue", sans-serif;
-    }
+/* @media print { */
+body {
+    width: 37cm !important;
+    height: 51.7cm !important;
+    margin: 30mm auto !important;
+    box-shadow: 3px -6px 13px var(--grayB);
 }
+
+html {
+    font: 400 22px/30px 'Roboto', "Helvetica Neue", sans-serif;
+}
+
+/* } */
 
 @page {
     size: A4;
@@ -350,7 +351,7 @@ circle {
 }
 
 .spacing-left {
-    padding-left: 2vw;
+    padding-left: 1.5vw;
 }
 
 .padding-around {
