@@ -23,19 +23,18 @@ body {
     width: 100%;
 }
 
-/* @media print { */
-body {
-    width: 37cm !important;
-    height: 51.7cm !important;
-    margin: 30mm auto !important;
-    box-shadow: 3px -6px 13px var(--grayB);
-}
+@media print {
+    body {
+        width: 41.4cm !important;
+        height: 58.8cm !important;
+        margin: 30mm auto !important;
+        box-shadow: 3px -6px 13px var(--grayB);
+    }
 
-html {
-    font: 400 22px/30px 'Roboto', "Helvetica Neue", sans-serif;
+    html {
+        font: 400 25px/30px 'Roboto', "Helvetica Neue", sans-serif;
+    }
 }
-
-/* } */
 
 @page {
     size: A4;
