@@ -23,8 +23,7 @@ body {
     width: 100%;
 }
 
-@media print {
-    body {
+@media print {    body {
         width: 41.4cm !important;
         height: 58.8cm !important;
         margin: 30mm auto !important;
