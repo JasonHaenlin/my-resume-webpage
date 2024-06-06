@@ -21,25 +21,33 @@ body {
     margin: 0;
     min-height: 100%;
     width: 100%;
+    break-after: auto;
 }
 
-@media print {    
-    body {
-        width: 41.4cm !important;
-        height: 58.8cm !important;
-        margin: 30mm auto !important;
-        box-shadow: 3px -6px 13px var(--grayB);
-    }
-
+@media print {   
     html {
-        font: 400 25px/30px 'Roboto', "Helvetica Neue", sans-serif;
+        font: 400 12px/18px 'Roboto', "Helvetica Neue", sans-serif !important;
+    } 
+    body {
+        box-sizing: border-box !important;
+        break-after: always !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        word-wrap: break-word !important;
+        word-break: normal !important;
+    }
+    @page {
+        size: A4 !important;
+        margin: 0 !important;
     }
 }
 
-@page {
-    size: A4;
-    margin: 0;
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 6vw;
+    }
 }
+
 
 a {
     text-decoration: none;
@@ -55,7 +63,7 @@ ul {
 }
 
 li {
-    line-height: 24px;
+    line-height: 1rem;
 }
 
 .header a {
@@ -93,7 +101,12 @@ li {
 
 .main>.section:nth-child(1) {
     width: 35%;
-    box-shadow: 3px -6px 13px var(--grayB);
+}
+
+@media screen {
+    .main>.section:nth-child(1) {
+        box-shadow: 3px -6px 13px var(--grayB);
+    }
 }
 
 .main>.section:nth-child(2) {
@@ -126,7 +139,6 @@ img {
 }
 
 circle {
-    fill: none;
     stroke-width: 10;
     stroke-linecap: round;
     stroke-dashoffset: 200;
@@ -142,7 +154,7 @@ circle {
 }
 
 .header__title {
-    font-size: 17px;
+    font-size: 1rem;
     background-color: var(--blue1);
     padding-top: 1em;
 }
@@ -155,7 +167,8 @@ circle {
 
 .header__profile__title {
     font-weight: bold;
-    font-size: 40px;
+    line-height: 2rem;
+    font-size: 2rem;
 }
 
 .header__profile__subtitle {
@@ -179,7 +192,7 @@ circle {
 .header__description {
     background-color: var(--blue3);
     padding-top: 0.5em;
-    font-size: 20px;
+    font-size: 1.2rem;
     padding-bottom: 0.5em;
     font-weight: 400;
 }
@@ -292,7 +305,7 @@ circle {
     padding-top: 1em;
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .header__profile {
         height: 18em;
     }
@@ -319,34 +332,41 @@ circle {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .header__profile {
+        height: 25em;
+    }
+
+    .card {
+        grid-template-columns: 1fr 6em;
+    }
+
+    .main {
+        display: block;
+    }
+}
+
+
 .bottom-border {
     border-bottom: 2px solid white;
     display: inline-block;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0em;
-    line-height: 40px;
+    line-height: 1.8rem;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     color: var(--blue3);
 }
 
 .subtitle {
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 0em;
     color: gray;
-}
-
-.name {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0em;
-    line-height: 1.1em;
 }
 
 .spacing-left {
@@ -376,7 +396,7 @@ circle {
     width: 1.5em;
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .flex-container {
         justify-content: center;
     }
@@ -405,11 +425,6 @@ circle {
 
 .text-center {
     text-align: center;
-}
-
-.text {
-    line-height: 30px;
-    font-weight: 300;
 }
 
 .item_section>div {
